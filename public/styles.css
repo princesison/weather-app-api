@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #88e0ef;
+  background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: #161e54;
+}
+
+.container {
+  height: 100vh;
+  padding: 10rem 7rem;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem 1rem;
+  padding: 0.5rem 0.7rem;
+}
+
+input {
+  font-weight: 500;
+  font-size: 25px;
+  padding: 0.8rem 0.4rem;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+input:focus {
+  outline-style: none;
+}
