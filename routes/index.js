@@ -9,8 +9,8 @@ const API_KEY_SECRET = process.env.API_KEY_SECRET;
 
 router.get("/", async (req, res) => {
   const params = new URLSearchParams({
-    [API_KEY_NAME]: API_KEY_SECRET,
     ...url.parse(req.url, true).query,
+    [API_KEY_NAME]: API_KEY_SECRET,
   });
 
   try {

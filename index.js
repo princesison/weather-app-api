@@ -8,6 +8,9 @@ const app = express();
 // Middleware
 app.use(express.json());
 
+// Static
+app.use(express.static("public"));
+
 // Routes
 app.use("/weather", require("./routes"));
 
