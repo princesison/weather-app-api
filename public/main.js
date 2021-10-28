@@ -2,6 +2,8 @@ const btn = document.querySelector("button");
 const weatherDisplay = document.querySelector(".weather-details");
 const cityInput = document.querySelector("#city-input");
 
+const date = new Date().toLocaleTimeString();
+
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 
@@ -34,6 +36,7 @@ const fetchWeather = async (cityName) => {
     icon: data.weather[0].icon,
     description: data.weather[0].description,
     main: data.weather[0].main,
+    country: data.sys.country,
   };
 
   addWeatherToDOM(displayData);
@@ -41,7 +44,7 @@ const fetchWeather = async (cityName) => {
 
 const addWeatherToDOM = (data) => {
   weatherDisplay.innerHTML = `
-      <h1>Weather in ${data.city}</h1>
+      <h1>Weather in ${data.city} ${data.country}</h1>
       <h2>${data.temp} &deg;C</h2>
       <img src="http://openweathermap.org/img/wn/${data.icon}@2x.png" alt="icon"/>
       <p>Description: ${data.description} ${data.main}</p>

@@ -47,9 +47,12 @@ input {
   padding: 0.8rem 0.4rem;
   background-color: transparent;
   border: none;
+  border-bottom: 5px solid #fff;
   text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 input:focus {
   outline-style: none;
+  border-bottom: none;
 }
