@@ -35,7 +35,6 @@ const fetchWeather = async (cityName) => {
     temp: data.main.temp,
     icon: data.weather[0].icon,
     description: data.weather[0].description,
-    main: data.weather[0].main,
     country: data.sys.country,
   };
 
@@ -47,7 +46,7 @@ const addWeatherToDOM = (data) => {
       <h1>Weather in ${data.city} ${data.country}</h1>
       <h2>${data.temp} &deg;C</h2>
       <img src="http://openweathermap.org/img/wn/${data.icon}@2x.png" alt="icon"/>
-      <p>Description: ${data.description} ${data.main}</p>
+      <p>Description: ${data.description}</p>
     `;
   cityInput.value = "";
 };
