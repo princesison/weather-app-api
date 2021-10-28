@@ -10,10 +10,10 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #88e0ef;
+  background-color: #161e54;
   background-image: url("https://www.transparenttextures.com/patterns/ag-square.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-  color: #161e54;
+  color: #88e0ef;
 }
 
 .container {
